@@ -1266,7 +1266,7 @@ function castle.uiupdate()
     end);
     
     editSectionToggle = ui.section('Editing', {open = editSectionToggle}, function()
-      state.color[1], state.color[2], state.color[3] = ui.colorPicker('color', state.color[1], state.color[2], state.color[3], 1, { enableAlpha = false })
+      state.color[1], state.color[2], state.color[3] = ui.colorPicker('Color', state.color[1], state.color[2], state.color[3], 1, { enableAlpha = false })
       
       state.tool = ui.radioButtonGroup('Tool', state.tool, {'add', 'remove', 'pick color', 'fill'});
       
